@@ -1,0 +1,76 @@
+.wow-alert-overlay {
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0, 0, 0, 0.2);
+    z-index:500;
+    width:100%;
+    height:100%;
+    z-index: 999999;
+}
+.wow-alert-content {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    background:#FFF;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    -khtml-border-radius:10px;
+    position:fixed;
+    z-index:99999999;
+    min-width:200px;
+    min-height:50px;
+    max-width:50%;
+    padding: 30px 30px;
+    left: 40%;
+	right:40%;
+    top: 40%;
+}
+.wow-alert-content p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: #333;
+    margin: 10px 0 20px 0;
+    font-weight: bold;
+    text-align: center;
+}
+.wow-alert-content a {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    font-family: Helvetica, Arial, sans-serif;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    -khtml-border-radius:5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+	margin: auto;
+    color: #F6FAF7;
+    display: block;
+    padding: 15px;
+    width: 100px;
+    background: #B41E8E;
+    text-decoration: none;
+    
+    line-height: 30px;
+}
+.wow-alert-content a:hover {
+    background: #579959;
+}
+
+@media only screen and (max-width: 700px) {
+
+.wow-alert-content {
+    min-height:50px;
+    padding: 30px 30px;
+    left: 20%;
+	right:20%;
+    top: 30%;
+}
+
+}

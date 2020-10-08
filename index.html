@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>LAZO Wheel</title>
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <script type="text/javascript" src="Winwheel.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		
+		<link rel="stylesheet" href="wow-alert.css">
+
+		
+    </head>
+	
+    <body>
+        <div align="center">
+            <table cellpadding="0" cellspacing="0" border="1" style="display: none;">
+                <tr>
+                    <td>
+                        <div class="power_controls">
+                            <br />
+                            <img id="spin_button" src="spin_on.png" alt="Spin" onClick="startSpin();" />
+                            <br /><br />
+                            &nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Play Again</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reset)
+                        </div>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+		<div align="center" style="margin-bottom:-30px; z-index:999; position: relative;"><img src="needle.png" >
+		</div>
+		<div align="center" id="the_wheel" onClick="startSpin();">
+			<canvas id="canvas" width="800px" height="800px" style="position: relative;">
+               <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+            </canvas>
+		</div>
+		
+		<script src="wheelCreate.js"></script>
+
+    </body>
+	
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.js"></script>
+		<script type="text/javascript" src="wow-alert.js"></script>
+		<script type="text/javascript" src="confetti.js"></script>
+	
+</html>
